@@ -1,0 +1,9 @@
+{
+  "story": [
+    { "type" : "Adjective" },
+    { "type" : "Activity" },
+    { "type" : "Object" },
+    { "type" : "Adjective" },
+    { "type" : "Adjective" }
+  ]
+}

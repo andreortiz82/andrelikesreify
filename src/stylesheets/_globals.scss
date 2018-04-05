@@ -5,4 +5,13 @@ body {
   color: $black;
 }
 
-h1,h2,h3,h4,h5 { font-family: 'Roboto Slab', serif; }
+h1,h2,h3,h4,h5 {
+  font-family: 'Roboto Slab', serif;
+  font-weight: 700;
+  margin: 0 0 rem(20) 0;
+}
+
+h1 { font-size: rem(50); }
+h2 { font-size: rem(40); }
+h3 { font-size: rem(30); }
+h4 { font-size: rem(20); }

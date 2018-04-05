@@ -7,12 +7,6 @@
   .container {
     text-align: center;
 
-    h2 {
-      font-weight: 700;
-      font-size: rem(40);
-      margin: 0 0 rem(20) 0;
-    }
-
     &.message-blocks {
       .message {
         text-align: left;
@@ -42,7 +36,7 @@
       }
 
       .message:nth-child(even),
-      .message:nth-child(odd) { background-size: 50%; }
+      .message:nth-child(odd) { background-size: 60%; }
     }
   }
 
