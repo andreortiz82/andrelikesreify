@@ -1,0 +1,42 @@
+.skill-meter-component {
+  svg.donut {
+    .donut-hole { fill: $trans; }
+    .donut-segment { fill: $trans; stroke-linecap: line; }
+    .donut-ring { fill: $trans; stroke-linecap: round; }
+
+    &.blue {
+      .donut-segment { stroke: $blue; }
+    }
+    &.yellow {
+      .donut-segment { stroke: $yellow; }
+    }
+    &.red {
+      .donut-segment { stroke: $red; }
+    }
+    &.navy {
+      .donut-segment { stroke: $navy; }
+    }
+    &.purple {
+      .donut-segment { stroke: $purple; }
+    }
+    &.green {
+      .donut-segment { stroke: $green; }
+    }
+    &.orange {
+      .donut-segment { stroke: $orange; }
+    }
+  }
+
+  label {
+    @include border-radius($round);
+    font-weight: bold;
+    font-size: rem(18);
+    padding: rem(5) rem(20);
+  }
+
+  span {
+    display: block;
+    color: $ccc;
+    font-size: rem(16);
+  }
+}

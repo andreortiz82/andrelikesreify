@@ -1,0 +1,25 @@
+// VARS
+// ===============================================
+$radius: 3px;
+$round: 1000px;
+
+
+// MIXINS
+// ===============================================
+@mixin border-radius($rad:$radius) {
+  border-radius: $rad;
+}
+
+@mixin shadow {
+  $value:0 5px 50px 0 rgba(0, 0, 0, 0.25);
+  box-shadow:$value;
+  -webkit-box-shadow:$value;
+  -moz-box-shadow:$value;
+}
+
+// FUNCTIONS & LOOPS
+// ===============================================
+@function rem($size, $base-font-size: 16) {
+  $remSize: $size / $base-font-size;
+  @return #{$remSize}rem;
+}

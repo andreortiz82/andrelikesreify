@@ -1,0 +1,60 @@
+.skills-container {
+  background: $white;
+  padding: rem(100) 0;
+  border-top: 1px solid $ccc;
+  border-bottom: 1px solid $ccc;
+
+  .container {
+    text-align: center;
+
+    h2 {
+      font-weight: 700;
+      font-size: rem(40);
+      margin: 0 0 rem(20) 0;
+    }
+
+    &.message-blocks {
+      .message {
+        text-align: left;
+        display: flex;
+        .caption {
+          width: 40%;
+          flex: 0 0 auto;
+          padding: rem(100) 0;
+        }
+
+        &:nth-child(even) .caption {
+          margin-left: 60%;
+        }
+      }
+
+      .message:nth-child(1) {
+        background: url(https://cdn.dribbble.com/users/310943/screenshots/3461180/feedly-force-field.png) no-repeat center right;
+      }
+      .message:nth-child(2) {
+        background: url(https://cdn.dribbble.com/users/310943/screenshots/3445537/feedly-portal.png) no-repeat center left;
+      }
+      .message:nth-child(3) {
+        background: url(https://cdn.dribbble.com/users/310943/screenshots/3448564/feedly_-_boards.png) no-repeat center right;
+      }
+      .message:nth-child(4) {
+        background: url(https://cdn.dribbble.com/users/310943/screenshots/3443144/feedly-bot.png) no-repeat center left;
+      }
+
+      .message:nth-child(even),
+      .message:nth-child(odd) { background-size: 50%; }
+    }
+  }
+
+  .skill-blocks {
+    display: flex;
+    justify-content: center;
+    margin-bottom: rem(100);
+
+    .skill-block {
+      flex: 0 0 auto;
+      text-align: center;
+      width: 14%;
+    }
+  }
+}

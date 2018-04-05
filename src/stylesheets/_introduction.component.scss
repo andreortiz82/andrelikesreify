@@ -1,0 +1,19 @@
+.introduction-container {
+  background: url(https://cdn.dribbble.com/users/310943/screenshots/2963775/mobile-shirt-illustration-01.jpg) no-repeat top right;
+  padding: rem(100);
+
+  .container {
+    display: flex;
+
+    .introduction-copy {
+      flex: 0 0 auto;
+      width: 50%;
+
+      h1 {
+        font-weight: 700;
+        font-size: rem(50);
+        margin: 0 0 rem(20) 0;
+      }
+    }
+  }
+}
