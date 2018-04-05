@@ -1,0 +1,25 @@
+@import "colors";
+
+.introduction-container,
+.skills-container,
+.example-container,
+.about-container,
+.conclusion-container {
+  padding: 100px;
+}
+
+.introduction-container {
+  background: $red;
+}
+.skills-container {
+  background: $orange;
+}
+.example-container {
+  background: $yellow;
+}
+.about-container {
+  background: $green;
+}
+.conclusion-container {
+  background: $blue;
+}
