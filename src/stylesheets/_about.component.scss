@@ -1,4 +1,108 @@
 .about-container {
-  background: $white;
   padding: rem(100);
+  background: $navy;
+  color: $white;
+  .block-bio-container {
+
+    .blocks {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: stretch;
+
+      .block {
+        flex: 0 0 auto;
+        width: rem(400);
+        // margin: rem(5);
+
+        &.image,
+        &.video {
+          height: rem(400);
+          overflow: hidden;
+          img {
+            width: 100%;
+          }
+
+          video { width: 100%; }
+        }
+
+        &.video {
+          background: $black;
+          position: relative;
+          cursor: pointer;
+
+          .play ,
+          .pause {
+            position: absolute;
+            bottom: rem(20);
+            right: rem(20);
+            color: $green;
+            transition:all 0.5s;
+            font-family: 'Roboto Slab', serif;
+            font-weight: 700;
+          }
+
+          &:hover .pause,
+          &:hover .play {
+            transform: scale(1.2);
+          }
+
+          video { margin-top: rem(90) }
+        }
+
+        &.message {
+
+          .message-wrapper {
+            padding: rem(40);
+
+            h5,p { margin: 0; padding: 0; }
+
+            h5 {
+              border-bottom: 5px solid $black;
+              padding: 0 0 rem(20) 0;
+              margin: 0 0 rem(20) 0;
+              display: inline-block;
+            }
+          }
+
+        }
+
+        &.light {
+          background: $light;
+          color: $black;
+        }
+
+        &.yellow {
+          background: $yellow;
+          color: $black;
+        }
+
+        &.green {
+          background: $green;
+          color: $black;
+        }
+
+        &.orange {
+          background: $orange;
+          color: $white;
+        }
+
+        &.navy {
+          background: $navy;
+          color: $white;
+        }
+
+        &.red {
+          background: $red;
+          color: $white;
+
+          .message-wrapper h5 { border-bottom: 5px solid $white; }
+        }
+
+      }
+    }
+  }
+
+  .quote-container {
+
+  }
 }

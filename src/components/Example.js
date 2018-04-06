@@ -24,8 +24,6 @@ export default class Example extends Component {
     this._ui_render_result = this._ui_render_result.bind(this);
     this._ui_render_label = this._ui_render_label.bind(this);
     this._ui_render_bullets = this._ui_render_bullets.bind(this);
-
-
   }
 
   autogenTheGame () {
@@ -179,8 +177,6 @@ export default class Example extends Component {
           <div className="panel">
             { this._ui_render_result() }
           </div>
-          {/*<button type="button" className="auto-gen-btn" onClick={this.autogenTheGame.bind(this)}>Auto-Generate</button>*/}
-          {/*<button type="button" className="next-btn" onClick={this.resetGame.bind(this)}>Do it again</button>*/}
         </div>
       </div>
     )
