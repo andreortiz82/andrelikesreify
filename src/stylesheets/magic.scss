@@ -7,6 +7,7 @@
 @import "introduction.component";
 @import "skills.component";
 @import "example.component";
+@import "about.component";
 
 .introduction-container,
 .skills-container,
@@ -27,9 +28,6 @@
   }
 }
 
-.about-container {
-  background: $green;
-}
 .conclusion-container {
   background: $blue;
 }

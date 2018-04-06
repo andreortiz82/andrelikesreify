@@ -2,7 +2,7 @@
   svg.donut {
     .donut-hole { fill: $trans; }
     .donut-segment { fill: $trans; stroke-linecap: line; }
-    .donut-ring { fill: $trans; stroke-linecap: round; }
+    .donut-ring { fill: $trans; stroke-linecap: line; }
 
     &.blue {
       .donut-segment { stroke: $blue; }

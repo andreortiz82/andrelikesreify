@@ -15,3 +15,7 @@ h1 { font-size: rem(50); }
 h2 { font-size: rem(40); }
 h3 { font-size: rem(30); }
 h4 { font-size: rem(20); }
+
+// Special
+::-moz-selection { background: $light; }
+::selection { background: $light; }

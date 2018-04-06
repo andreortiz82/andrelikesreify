@@ -15,19 +15,19 @@ export default class Skills extends Component {
             <SkillMeter label="Illustration" amount="85 15" color="orange" caption="I can hang"/>
           </div>
           <div className="skill-block">
-            <SkillMeter label="Application Design" amount="98 2" color="blue" caption="Level Badass"/>
+            <SkillMeter label="Application Design" amount="98 2" color="green" caption="Level Badass"/>
           </div>
           <div className="skill-block">
             <SkillMeter label="Experience Design" amount="98 2" color="green" caption="Level Badass"/>
           </div>
           <div className="skill-block">
-            <SkillMeter label="HTML + CSS" amount="95 5" color="purple" caption="Level Badass"/>
+            <SkillMeter label="HTML + CSS" amount="95 5" color="green" caption="Level Badass"/>
           </div>
           <div className="skill-block">
-            <SkillMeter label="React JS" amount="65 35" color="red" caption="I can be dangerous"/>
+            <SkillMeter label="React JS" amount="65 35" color="yellow" caption="I can be dangerous"/>
           </div>
           <div className="skill-block">
-            <SkillMeter label="CLJS" amount="15 85" color="yellow" caption="Be patient with me"/>
+            <SkillMeter label="CLJS" amount="15 85" color="red" caption="Be patient with me"/>
           </div>
         </div>
 

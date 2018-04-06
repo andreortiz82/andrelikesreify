@@ -1,112 +1,169 @@
 .example-container {
-  padding: rem(150) 0;
-  background: $red;
-  text-align: center;
+  display: flex;
 
-  .container {
-    color: $white;
+  .form-container,
+  .story-container {
+    flex: 0 0 auto;
+    width: 50%;
 
     .panel {
-
-      .panel-forms {
-        opacity: 0;
-        visibility: hidden;
-        display: none;
-        transition: all 0.5s;
-
-        &.active {
-          @include shadow;
-          background: $white;
-          padding: rem(40);
-          width: rem(300);
-          margin: auto;
-
-          opacity: 1;
-          visibility: visible;
-          display: block;
-        }
-
-        .field {
-          .input-field {
-            border: none;
-            border-bottom: 2px solid $black;
-            display: block;
-            width: rem(300);
-            outline: none;
-            margin: 0 0 rem(20) 0;
-            text-align: center;
-
-            &:focus,
-            &:active { border-color: $red; }
-          }
-
-          .instruction {
-            color: $black;
-            display: block;
-            text-align: center;
-            font-size: rem(18);
-          }
-        }
-      }
-
-      .panel-actions {
-        margin-top: rem(40);
-
-        button { cursor: pointer; }
-
-        button.next-btn {
-          @include border-radius($round);
-          border: none;
-          background: $yellow;
-          padding: rem(20) rem(40);
-          font-size: rem(26);
-          font-family: 'Roboto Slab', serif;
-          font-weight: 700;
-          margin-right: rem(40);
-          transition: all 0.4s;
-
-          &:hover {
-            transform: scale(0.9);
-          }
-        }
-
-        button.auto-gen-btn {
-          transition: all 0.4s;
-          border: none;
-          background: $trans;
-          color: rgba($white, 0.5);
-          padding: rem(10) rem(20);
-          font-size: rem(18);
-          font-family: 'Roboto Slab', serif;
-          font-weight: 700;
-
-          &:hover { color: $white; }
-        }
-      }
+      padding: rem(100) rem(50);
     }
+  }
+
+  .story-container {
+    position: relative;
 
     .story-result {
-      @include shadow;
-      background: $white;
-      padding: rem(60);
-      margin: auto;
-      text-align: left;
 
       p.lead {
         margin: 0;
-        font-size: rem(40);
-        line-height: rem(60);
-        color: $black;
+        margin-bottom: rem(20);
+        color: $white;
+        transition: all 0.5s;
+        user-select: none;
+
+        &.readable { color: $black; }
 
         span {
+          transition: all 0.5s;
           font-weight: bold;
           color: $red;
           font-family: 'Roboto Slab', serif;
           font-weight: 700;
         }
       }
+    }
+
+    button.auto-gen-btn {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      cursor: pointer;
+      outline: none;
+      transition: all 0.4s;
+      border: none;
+      background: $trans;
+      color: rgba($black, 0.5);
+      padding: rem(10) rem(20);
+      font-size: rem(18);
+      font-family: 'Roboto Slab', serif;
+      font-weight: 700;
+
+      &:hover { color: $black; }
+    }
+  }
 
 
+  .form-container {
+    color: $white;
+    background: $red;
+
+    .form {
+
+      .label-wrapper {
+        height: rem(70);
+        overflow: hidden;
+        position: relative;
+
+        .instruction-stack {
+          position: absolute;
+          transition: all 0.5s;
+
+          $spaceamounts: (0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+          @each $space in $spaceamounts {
+            &.step-#{$space} { top: rem(-110 * $space); }
+          }
+
+          .instruction {
+            color: $yellow;
+            display: block;
+            text-align: left;
+            font-size: rem(24);
+            padding: rem(20);
+            font-family: 'Roboto Slab', serif;
+            font-weight: 700;
+            height: rem(70);
+          }
+        }
+      }
+
+      .field {
+
+        .bullet-container {
+          display: flex;
+          margin-left: rem(20);
+
+          .bullet {
+            @include border-radius($round);
+            margin-right: rem(20);
+            margin-top: rem(20);
+            flex: 0 0 auto;
+            width: rem(10);
+            height: rem(10);
+            background: rgba($white, 0.5);
+            transition: background 0.5s;
+
+            &.active {
+              background: $yellow;
+            }
+          }
+        }
+
+        .field-controls {
+          @include shadow;
+          background: $white;
+          display: flex;
+          align-items: stretch;
+          width: rem(600);
+
+          .input-field,
+          button.next-btn {
+            height: rem(80);
+          }
+
+          .input-field {
+            flex: 1 1 auto;
+            border: none;
+            display: block;
+            outline: none;
+            margin: 0;
+            text-indent: rem(20);
+
+            &:focus,
+            &:active { border-color: $red; }
+          }
+
+          span {
+            color: $ccc;
+            width: rem(100);
+            text-align: center;
+            font-size: rem(18);
+            line-height: rem(80);
+          }
+
+          button.next-btn {
+            border: none;
+            font-size: rem(26);
+            font-family: 'Roboto Slab', serif;
+            font-weight: 700;
+            min-width: rem(100);
+            cursor: pointer;
+            outline: none;
+
+            .fa-arrow-right {
+              transition: all 0.4s;
+            }
+
+            &:hover {
+              .fa-arrow-right {
+                color: $red;
+                margin-left: rem(10);
+              }
+            }
+          }
+        }
+      }
     }
   }
 }

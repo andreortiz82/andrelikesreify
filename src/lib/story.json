@@ -5,5 +5,45 @@
     { "type" : "SciFi inspired Noun" },
     { "type" : "Funny Adjective" },
     { "type" : "More funny Adjective" }
+  ],
+  "adjective": [
+    "awesome",
+    "boring",
+    "callous",
+    "dweeb",
+    "extreme",
+    "flatulent",
+    "gaudy",
+    "hairy",
+    "icky",
+    "jazzy",
+    "kooky",
+    "loaded",
+    "meaty",
+    "notorious",
+    "odorous",
+    "paranormal",
+    "quirky",
+    "ratchet",
+    "snappy",
+    "tactful",
+    "ugly",
+    "victorious",
+    "wet",
+    "zest"],
+  "noun": [
+    "Show Girl",
+    "Gun Show",
+    "Space Rock"
+  ],
+  "verb": [
+    "air bending",
+    "picking toes",
+    "dancing a jig",
+    "poking the chickens",
+    "waxing on and off",
+    "eating someones lunch",
+    "waving the flag",
+    "rocking the casba"
   ]
 }
