@@ -1,9 +1,9 @@
 {
   "story": [
     { "type" : "Adjective" },
-    { "type" : "Activity" },
-    { "type" : "Object" },
-    { "type" : "Adjective" },
-    { "type" : "Adjective" }
+    { "type" : "Verb" },
+    { "type" : "SciFi inspired Noun" },
+    { "type" : "Funny Adjective" },
+    { "type" : "More funny Adjective" }
   ]
 }

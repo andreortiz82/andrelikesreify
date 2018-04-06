@@ -21,6 +21,26 @@ export default class Example extends Component {
     this._ui_render_actions = this._ui_render_actions.bind(this);
   }
 
+  autogenTheGame () {
+    // For lazy asses
+    var adjectiveSet1 = ['awesome', 'boring', 'callous', 'dweeb', 'extreme', 'flatulent', 'gaudy']
+    var adjectiveSet2 = ['hairy', 'icky', 'jazzy', 'kooky', 'loaded', 'meaty', 'notorious', 'odorous', 'paranormal', 'quirky']
+    var adjectiveSet3 = ['ratchet', 'snappy', 'tactful', 'ugly', 'victorious', 'wet', 'xanthous', 'zest']
+    var nounSet = ['Cybernetics', 'Titan Colony', 'Crystalline Moon', 'Chooli Prime', 'Floating City', 'Spaceport on Satet', 'Aran Station', 'New Vulcan']
+    var verbSet = ['picking my toes', 'air bending', 'pooping', 'watching the grass grow', 'floating', 'surfing the Chans']
+
+    this.setState({
+      currentState: this.state.questionCount+1,
+      responses: [
+        adjectiveSet1[Math.floor(Math.random()*adjectiveSet1.length)],
+        verbSet[Math.floor(Math.random()*verbSet.length)],
+        nounSet[Math.floor(Math.random()*nounSet.length)],
+        adjectiveSet2[Math.floor(Math.random()*adjectiveSet2.length)],
+        adjectiveSet3[Math.floor(Math.random()*adjectiveSet3.length)]
+      ]
+    })
+  }
+
   updateResponse (event) {
     this.setState({
       currentResponse: event.target.value
@@ -52,8 +72,11 @@ export default class Example extends Component {
       return (
         <div className={self.state.currentState === index ? "active panel-forms" : "panel-forms"} key={index}>
           <div className="field" data-step={index}>
-            <input type="text" className="input-field" value={self.state.currentResponse} onChange={self.updateResponse}/>
             <span className="instruction">{q.type}</span>
+            <div className="field-controls">
+              <input type="text" className="input-field" value={self.state.currentResponse} onChange={self.updateResponse}/>
+              <button type="button" className="next-btn" onClick={self.submitResponse.bind(self)}>Next</button>
+            </div>
           </div>
         </div>
         )
@@ -82,7 +105,7 @@ export default class Example extends Component {
       return (
         <div className="panel-actions">
           <button type="button" className="next-btn" onClick={this.submitResponse.bind(this)}>Next</button>
-          <button type="button" className="auto-gen-btn">Auto-Generate</button>
+          <button type="button" className="auto-gen-btn" onClick={this.autogenTheGame.bind(this)}>Auto-Generate</button>
         </div>
       )
     }
