@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import storyJSON from '../lib/story.json'
 import Slide from 'react-reveal/Slide';
-import Zoom from 'react-reveal/Zoom';
 import Fade from 'react-reveal/Fade';
 
 export default class Example extends Component {
@@ -13,7 +12,8 @@ export default class Example extends Component {
       questions: storyJSON.story,
       currentStep: 0,
       questionCount: storyJSON.story.length,
-      isReadable: false
+      isReadable: false,
+      isValid: null
     }
 
     this.submitResponse = this.submitResponse.bind(this);
@@ -22,7 +22,6 @@ export default class Example extends Component {
 
     this._ui_render_form = this._ui_render_form.bind(this);
     this._ui_render_result = this._ui_render_result.bind(this);
-    this._ui_render_actions = this._ui_render_actions.bind(this);
     this._ui_render_label = this._ui_render_label.bind(this);
     this._ui_render_bullets = this._ui_render_bullets.bind(this);
 
@@ -31,8 +30,10 @@ export default class Example extends Component {
 
   autogenTheGame () {
     this.setState({
-      currentStep: this.state.questionCount+1,
+      currentStep: this.state.questionCount,
       isReadable: true,
+      currentResponse: '',
+      isValid: null,
       responses: [
         storyJSON.adjective[Math.floor(Math.random()*storyJSON.adjective.length)],
         storyJSON.verb[Math.floor(Math.random()*storyJSON.verb.length)],
@@ -51,21 +52,25 @@ export default class Example extends Component {
 
   submitResponse(e){
     if (e.key === 'Enter') {
-      var tempArray = this.state.responses
-      tempArray.push(this.state.currentResponse)
-      if (this.state.currentStep !== (this.state.questionCount-1)) {
+      if (this.state.currentResponse === '') {
+
         this.setState({
-          responses: tempArray,
-          currentResponse: '',
-          currentStep: this.state.currentStep+1,
-          isReadable: false
+          isValid: false
         })
+
       } else {
+        var _responses = this.state.responses
+        var _step = this.state.currentStep
+
+        _responses.push(this.state.currentResponse)
+        _step = _step+1
+
         this.setState({
-          responses: tempArray,
+          isValid: true,
+          responses: _responses,
+          currentStep: _step,
           currentResponse: '',
-          currentStep: this.state.currentStep+1,
-          isReadable: true
+          isReadable: _step >= this.state.questionCount ? true : false
         })
       }
     }
@@ -75,8 +80,11 @@ export default class Example extends Component {
     this.setState({
       responses: [],
       currentResponse: '',
+      questions: storyJSON.story,
       currentStep: 0,
-      isReadable: false
+      questionCount: storyJSON.story.length,
+      isReadable: false,
+      isValid: null
     })
   }
 
@@ -97,24 +105,49 @@ export default class Example extends Component {
     })
   }
 
+  _validation_message () {
+    var messages = [
+      'Add something...',
+      'You have to add something...',
+      'Just add something...',
+      'Type something...'
+    ]
+
+    if (this.state.isValid !== null || this.state.isValid !== false) {
+      return messages[Math.floor(Math.random()*messages.length)]
+    } else {
+      return null
+    }
+  }
+
   _ui_render_form () {
-    var self = this
     return (
       <div className="form">
         <div className="label-wrapper">
           <div className={"instruction-stack step-"+this.state.currentStep}>
             { this._ui_render_label() }
+            <span className="instruction" >Such great fun!</span>
           </div>
         </div>
         <div className="field">
-          <div className="field-controls">
-            <input type="text" className="input-field" onKeyPress={self.submitResponse.bind(self)} value={self.state.currentResponse} onChange={self.updateResponse}/>
-            <span>Hit "Enter"</span>
-          </div>
 
-          <div className="bullet-container">
-            { this._ui_render_bullets() }
-          </div>
+          <Fade collapse left when={ this.state.isReadable === false }>
+            <div className="field-controls">
+              <input type="text" className="input-field" placeholder={ this._validation_message() } onKeyPress={this.submitResponse.bind(this)} value={this.state.currentResponse} onChange={this.updateResponse}/>
+              <span>Hit "Enter"</span>
+            </div>
+
+            <div className="bullet-container">
+              { this._ui_render_bullets() }
+            </div>
+          </Fade>
+
+          <Fade collapse cascade right when={ this.state.isReadable === true }>
+            <div className="field-actions">
+              <button type="button" className="reset-btn" onClick={this.resetGame.bind(this)}>Do it again</button>
+              <button type="button" className="auto-gen-btn" onClick={this.autogenTheGame.bind(this)}>Auto-Generate</button>
+            </div>
+          </Fade>
         </div>
       </div>
     )
@@ -128,22 +161,6 @@ export default class Example extends Component {
       </p>
     </div>
     )
-  }
-
-  _ui_render_actions(){
-    if (this.state.currentStep >= this.state.questionCount) {
-      return (
-        <div className="panel-actions">
-          {/*<button type="button" className="next-btn" onClick={this.resetGame.bind(this)}>Do it again</button>*/}
-        </div>
-      )
-    } else {
-      return (
-        <div className="panel-actions">
-          {/*<button type="button" className="auto-gen-btn" onClick={this.autogenTheGame.bind(this)}>Auto-Generate</button>*/}
-        </div>
-      )
-    }
   }
 
   render() {
