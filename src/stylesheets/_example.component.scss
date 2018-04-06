@@ -31,6 +31,9 @@
           color: $red;
           font-family: 'Roboto Slab', serif;
           font-weight: 700;
+          border-bottom: 3px solid $red;
+          min-width: rem(50);
+          display: inline-block;
         }
       }
     }

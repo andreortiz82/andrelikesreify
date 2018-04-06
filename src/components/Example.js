@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import storyJSON from '../lib/story.json'
+import Slide from 'react-reveal/Slide';
+import Zoom from 'react-reveal/Zoom';
+import Fade from 'react-reveal/Fade';
 
 export default class Example extends Component {
   constructor(props) {
@@ -121,15 +124,7 @@ export default class Example extends Component {
     return (
     <div className="story-result">
       <p className={ this.state.isReadable ? "lead readable" : "lead"}>
-        Andre Ortiz is a
-        <span>{ this.state.responses[0] }</span>
-        dude living in Austin, TX. He's always learning new skills like
-        <span>{ this.state.responses[1] }</span> and
-        <span>{ this.state.responses[2] }</span> (that new javascript framework).
-        Mostly, he enjoys designing and building software with
-        <span>{ this.state.responses[3] }</span>
-        people and becoming better at his craft. Andre is the type of
-        <span>{ this.state.responses[4] }</span> person you'd want on your team.
+        Andre Ortiz is a <Fade delay={100}><span>{ this.state.responses[0]}</span></Fade> dude living in Austin, TX. He's always learning new skills like <Fade delay={200}><span>{ this.state.responses[1] }</span></Fade> and <Fade delay={300}><span>{ this.state.responses[2] }</span></Fade> (that new javascript framework). Mostly, he enjoys designing and building software with <Fade delay={400}><span>{ this.state.responses[3] }</span></Fade> people and becoming better at his craft. Andre is the type of <Fade delay={500}><span>{ this.state.responses[4] }</span></Fade> person you'd want on your team.
       </p>
     </div>
     )
@@ -154,15 +149,15 @@ export default class Example extends Component {
   render() {
     return (
       <div className="example-container">
-
-        <div className="form-container">
-          <div className="panel">
-            <h2>Golly gee! Real code.</h2>
-            <p className="lead">Here's a quick example of my capabilities. It's totally original. I call it <strike>MadLibs&trade;</strike> ... <br/>ZannyWordprov&trade; (it's a working title)</p>
-            { this._ui_render_form() }
+        <Slide left>
+          <div className="form-container">
+            <div className="panel">
+              <h2>Golly gee! Real code.</h2>
+              <p className="lead">Here's a quick example of my capabilities. It's totally original. I call it <strike>MadLibs&trade;</strike> ... <br/>ZannyWordprov&trade; (it's a working title)</p>
+              { this._ui_render_form() }
+            </div>
           </div>
-        </div>
-
+        </Slide>
         <div className="story-container">
           <div className="panel">
             { this._ui_render_result() }
