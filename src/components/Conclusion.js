@@ -33,19 +33,19 @@ export default class Conclusion extends Component {
           </div>
 
           <div className="social-links">
-            <a href="https://www.linkedin.com/in/andreortiz/" target="_blank">
+            <a href="https://www.linkedin.com/in/andreortiz/" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-linkedin"></i>
             </a>
-            <a href="https://dribbble.com/andreortiz" target="_blank">
+            <a href="https://dribbble.com/andreortiz" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-dribbble"></i>
             </a>
-            <a href="https://github.com/andreortiz82" target="_blank">
+            <a href="https://github.com/andreortiz82" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-github"></i>
             </a>
-            <a href="https://www.instagram.com/andreortiz/" target="_blank">
+            <a href="https://www.instagram.com/andreortiz/" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-instagram"></i>
             </a>
-            <a href="https://www.youtube.com/channel/UCp0yFoeapfq0CoNJje5npeA" target="_blank">
+            <a href="https://www.youtube.com/channel/UCp0yFoeapfq0CoNJje5npeA" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-youtube"></i>
             </a>
           </div>

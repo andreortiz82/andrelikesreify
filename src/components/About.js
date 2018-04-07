@@ -27,7 +27,6 @@ export default class About extends Component {
   }
 
   _ui_render_video_control (bool) {
-    console.log(bool, 'bool')
     if (bool) {
       return (<span className="video-state pause">Pause</span>)
     } else {
@@ -136,7 +135,7 @@ export default class About extends Component {
               <Fade up>
               <div className="block video" onClick={ this.playVideo.bind(this) }>
                 { this._ui_render_video_control(this.state.videoIsPlaying) }
-                <video ref="video" autostart="false" src="/bio-pics/song2.mp4" type="video/mp4"/>
+                <video loop ref="video" autostart="false" src="/bio-pics/song2.mp4" type="video/mp4"/>
               </div>
               </Fade>
             </div>

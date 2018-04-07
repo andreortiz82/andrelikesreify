@@ -127,27 +127,6 @@
             font-size: rem(18);
             line-height: rem(80);
           }
-
-          button.next-btn {
-            border: none;
-            font-size: rem(26);
-            font-family: 'Roboto Slab', serif;
-            font-weight: 700;
-            min-width: rem(100);
-            cursor: pointer;
-            outline: none;
-
-            .fa-arrow-right {
-              transition: all 0.4s;
-            }
-
-            &:hover {
-              .fa-arrow-right {
-                color: $red;
-                margin-left: rem(10);
-              }
-            }
-          }
         }
 
         .field-actions {
@@ -164,8 +143,11 @@
             font-size: rem(24);
             font-family: 'Roboto Slab', serif;
             font-weight: 700;
+            transition: all 0.5s;
 
-            &:hover { color: $black; }
+            &:hover {
+              @include shadow;
+            }
           }
 
           button.auto-gen-btn {

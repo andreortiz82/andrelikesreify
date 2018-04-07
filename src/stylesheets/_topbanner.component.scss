@@ -28,7 +28,7 @@
   .email-btn {
     margin-left: rem(20);
     display: inline-block;
-    background: $yellow;
+    background: $white;
     color: $black;
     text-decoration: none;
     font-family: 'Roboto Slab', serif;
@@ -36,5 +36,11 @@
     font-size: rem(16);
     padding: rem(5) rem(20);
     @include border-radius($round);
+    transition: all 0.5s;
+
+    &:hover {
+      transform: scale(1.2);
+    }
+
   }
 }
