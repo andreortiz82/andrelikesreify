@@ -78,7 +78,7 @@ export default class Skills extends Component {
             <Slide left>
             <div className="caption">
               <h3>Super Nerd Legos&trade;</h3>
-              <p className="lead">HTML, CSS and React: These are fantastic tools for build functional prototypes. Plus, it gives me mad street-cred with the developers.</p>
+              <p className="lead">HTML, CSS and React: These are fantastic tools for building functional prototypes. Plus, it gives me mad street-cred with the developers.</p>
             </div>
             </Slide>
           </article>
@@ -87,7 +87,7 @@ export default class Skills extends Component {
             <Slide right>
             <div className="caption">
               <h3>Holy Deployment, Batman!</h3>
-              <p className="lead">Like a loyal sidekick: I help setup the components, test the UX and handle the unexpected. I'm here support the engineers until the feature is live.</p>
+              <p className="lead">Like a loyal sidekick: I help setup the components, test the UX and handle the unexpected. I'm here to support the engineers until the feature is live.</p>
             </div>
             </Slide>
           </article>

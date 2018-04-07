@@ -17,9 +17,13 @@
       flex: 0 0 auto;
       width: 50%;
 
+      .andreortiz-logo {
+        width: rem(100);
+        margin-bottom: rem(20);
+      }
+
       @include mq('mobile') {
         width: 100%;
-        background: $white;
       }
     }
   }

@@ -33,8 +33,7 @@ export default class TopBanner extends Component {
   render() {
     return (
       <div className={ this.state.showBanner ? "banner-component" : "banner-component hide" }>
-        <span><b>My name is Andre Ortiz.</b> I'm a designer from Austin, TX and <b>I want to work with ReifyHealth!</b></span>
-        <a className="email-btn" href="mailto:hello@andreortiz.com">Let's talk</a>
+        <a href="mailto:hello@andreortiz.com"><span><b>Hey, Reify!</b> I want to work with you. <b>Click the banner</b> and let's talk about it.</span></a>
       </div>
     );
   }

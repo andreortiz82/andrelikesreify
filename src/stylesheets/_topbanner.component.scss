@@ -1,6 +1,6 @@
 .banner-component {
   padding: rem(5);
-  background: $black;
+  background: $blue;
   color: $white;
   display: flex;
   align-items: center;
@@ -9,8 +9,7 @@
   top: 0;
   width: 100%;
   z-index: 1000;
-  transition: top 0.5s;
-  @include shadow;
+  transition: all 0.5s;
 
   @include mq('mobile') {
     display: none;
@@ -20,31 +19,17 @@
     top: rem(-100);
   }
 
+  a {
+    color: $white;
+    text-decoration: none;
+  }
+
   span {
     font-size: rem(18);
   }
 
-  span,
-  .email-btn {
-    flex:0 0 auto;
-  }
-
-  .email-btn {
-    margin-left: rem(20);
-    display: inline-block;
-    background: $white;
-    color: $black;
-    text-decoration: none;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 700;
-    font-size: rem(16);
-    padding: rem(5) rem(20);
-    @include border-radius($round);
-    transition: all 0.5s;
-
-    &:hover {
-      transform: scale(1.2);
-    }
-
+  &:hover {
+    padding-top: rem(20);
+    padding-bottom: rem(20);
   }
 }
