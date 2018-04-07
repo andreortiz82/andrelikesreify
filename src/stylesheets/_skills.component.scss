@@ -13,7 +13,7 @@
         .caption {
           width: 40%;
           flex: 0 0 auto;
-          padding: rem(100) 0;
+          padding: rem(150) 0;
         }
 
         &:nth-child(even) .caption {
@@ -22,16 +22,16 @@
       }
 
       .message:nth-child(1) {
-        background: url(https://cdn.dribbble.com/users/310943/screenshots/3461180/feedly-force-field.png) no-repeat center right;
+        background: url(/illustration-pics/pencil.jpg) no-repeat center right;
       }
       .message:nth-child(2) {
-        background: url(https://cdn.dribbble.com/users/310943/screenshots/3445537/feedly-portal.png) no-repeat center left;
+        background: url(/illustration-pics/lookinggood.jpg) no-repeat center left;
       }
       .message:nth-child(3) {
-        background: url(https://cdn.dribbble.com/users/310943/screenshots/3448564/feedly_-_boards.png) no-repeat center right;
+        background: url(/illustration-pics/legos.jpg) no-repeat center right;
       }
       .message:nth-child(4) {
-        background: url(https://cdn.dribbble.com/users/310943/screenshots/3443144/feedly-bot.png) no-repeat center left;
+        background: url(/illustration-pics/hero.jpg) no-repeat center left;
       }
 
       .message:nth-child(even),

@@ -41,30 +41,31 @@ export default class About extends Component {
           <div className="bio-container">
             <h2>About me</h2>
             <p className="lead">
-              I'm a family man with a passion to create. A self-starter, list maker and strong teammate.
+              I'm a family man with a passion for making things. A self-starter, list maker and strong teammate.
             </p>
 
             <ul>
               <label>Hobbies</label>
               <li>Walking + Hiking</li>
-              <li>Music + Video Production</li>
+              <li>Music + Video production</li>
               <li>Drawing + Graffiti</li>
               <li>Dad life</li>
             </ul>
 
             <ul>
               <label>Strengths</label>
-              <li>Working Experience</li>
+              <li>15 years experience</li>
               <li>Creative thinker</li>
               <li>Strong teammate</li>
               <li>Focused + Driven</li>
+              <li>Self Managed</li>
             </ul>
 
             <ul>
               <label>Weaknesses</label>
               <li>Impatient</li>
-              <li>Over anylitical</li>
-              <li>Self critical</li>
+              <li>Over analytical</li>
+              <li>Self Critical</li>
             </ul>
           </div>
 
@@ -91,7 +92,7 @@ export default class About extends Component {
               <div className="block message white">
                 <div className="message-wrapper">
                   <h5>Work Goals</h5>
-                  <p>Build products that drive industry with a team I love.</p>
+                  <p>Build products that drive the industry with a great team.</p>
                 </div>
               </div>
               </Fade>

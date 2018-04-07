@@ -12,7 +12,7 @@ export default class Skills extends Component {
         <Fade>
         <div className="container">
           <h2>Capabilities + Process</h2>
-          <p className="lead">For the last 15 years I have been crafting interactive content. Over that time, I've learned multiple programing languages and watched design trends fall in and out of favor. <br/>As the digital landscape evolves, one thing that remains the same is the Users need for a seemless experience.</p>
+          <p className="lead">For the last 15 years I have been hand crafting the internet. Over that time, I've learned multiple programing languages and witnessed design trends fall in and out of favor. <br/>As the digital landscape evolves, one thing remains the same: <span>Users crave experience.</span></p>
         </div>
         </Fade>
         <div className="skill-blocks">
@@ -69,7 +69,7 @@ export default class Skills extends Component {
             <Slide right>
             <div className="caption">
               <h3>Looking good and feeling good</h3>
-              <p className="lead">Asethetics and animation are key to the Users overall experience. Using my design toolset, I craft a design worthy of praise and a free beer.</p>
+              <p className="lead">Aesthetics and animation are key to successful interactions. Using pre-existing design collateral or starting from scratch, I craft a design worthy of praise and a free beer.</p>
             </div>
             </Slide>
           </article>
@@ -87,7 +87,7 @@ export default class Skills extends Component {
             <Slide right>
             <div className="caption">
               <h3>Holy Deployment, Batman!</h3>
-              <p className="lead">Like a loyal sidekick, I'm here support the engineers until the feature is live. Helping to setup the components, test the UX and handle the unexpected.</p>
+              <p className="lead">Like a loyal sidekick: I help setup the components, test the UX and handle the unexpected. I'm here support the engineers until the feature is live.</p>
             </div>
             </Slide>
           </article>
