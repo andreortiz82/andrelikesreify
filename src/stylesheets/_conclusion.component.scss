@@ -3,6 +3,12 @@
   background: url(/illustration-pics/beef.jpg) no-repeat bottom center;
   background-size: 35%;
 
+  @include mq('mobile') {
+    padding: rem(20);
+    min-height: rem(920);
+    background-size: 100%;
+  }
+
   .signature {
     width: rem(150);
     svg { width: 100%; }

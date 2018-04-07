@@ -2,6 +2,10 @@
   background: $white;
   padding: rem(100) 0;
 
+  @include mq('mobile') {
+    padding: rem(20);
+  }
+
   .container {
     text-align: center;
 
@@ -9,14 +13,30 @@
       .message {
         text-align: left;
         display: flex;
+
+        @include mq('mobile') {
+          flex-wrap: wrap;
+        }
+
         .caption {
           width: 40%;
           flex: 0 0 auto;
           padding: rem(150) 0;
+
+          @include mq('mobile') {
+            width: 100%;
+            padding: 0;
+            margin-top: rem(150);
+          }
         }
 
         &:nth-child(even) .caption {
           margin-left: 60%;
+
+          @include mq('mobile') {
+            margin-left: 0;
+            text-align: right;
+          }
         }
       }
 
@@ -34,7 +54,20 @@
       }
 
       .message:nth-child(even),
-      .message:nth-child(odd) { background-size: 60%; }
+      .message:nth-child(odd) {
+        background-size: 60%;
+      }
+
+      .message:nth-child(even) {
+        @include mq('mobile') {
+          background-position: top right;
+        }
+      }
+      .message:nth-child(odd) {
+        @include mq('mobile') {
+          background-position: top left;
+        }
+      }
     }
   }
 
@@ -43,10 +76,19 @@
     justify-content: center;
     margin-bottom: rem(100);
 
+    @include mq('mobile') {
+      flex-wrap: wrap;
+      margin-bottom: rem(40);
+    }
+
     .skill-block {
       flex: 0 0 auto;
       text-align: center;
       width: 14%;
+
+      @include mq('mobile') {
+        width: 50%;
+      }
     }
   }
 }

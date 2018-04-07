@@ -23,3 +23,12 @@ $round: 1000px;
   $remSize: $size / $base-font-size;
   @return #{$remSize}rem;
 }
+
+@mixin mq($point) {
+  @if $point == 'desk' {
+    @media (min-width: 1200px) { @content; }
+  }
+  @else if $point == 'mobile' {
+    @media (max-width: 960px) { @content; }
+  }
+}

@@ -16,6 +16,10 @@ h2 { font-size: rem(40); }
 h3 { font-size: rem(30); }
 h4 { font-size: rem(20); }
 
+@include mq('mobile') {
+  h1 { font-size: rem(30); }
+}
+
 // Special
 ::-moz-selection { background: $light; }
 ::selection { background: $light; }
@@ -28,10 +32,18 @@ h4 { font-size: rem(20); }
   .container {
     width: rem(1200);
     margin: auto;
+
+    @include mq('mobile') {
+      width: 90%;
+    }
   }
 
   p:not(.lead) {
     line-height: rem(40);
+
+    @include mq('mobile') {
+      line-height: rem(35);
+    }
   }
 
   p.lead {
@@ -44,6 +56,11 @@ h4 { font-size: rem(20); }
       color: $blue;
       text-decoration: none;
       border-bottom: 1px dashed $blue;
+    }
+
+    @include mq('mobile') {
+      font-size: rem(24);
+      line-height: rem(35);
     }
   }
 }

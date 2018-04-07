@@ -12,6 +12,10 @@
   transition: top 0.5s;
   @include shadow;
 
+  @include mq('mobile') {
+    display: none;
+  }
+
   &.hide {
     top: rem(-100);
   }

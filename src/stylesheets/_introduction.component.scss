@@ -2,12 +2,24 @@
   background: url(/illustration-pics/intro.jpg) no-repeat top right;
   padding: rem(100);
 
+  @include mq('mobile') {
+    padding: rem(20);
+    background: url(/illustration-pics/intro.jpg) no-repeat top center;
+    background-size: 100%;
+    padding-top: rem(320);
+    text-align: center;
+  }
+
   .container {
     display: flex;
 
     .introduction-copy {
       flex: 0 0 auto;
       width: 50%;
+
+      @include mq('mobile') {
+        width: 100%;
+      }
     }
   }
 }

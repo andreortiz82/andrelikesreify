@@ -3,10 +3,26 @@
   color: $black;
   display: flex;
 
+  @include mq('mobile') {
+    flex-wrap: wrap;
+    padding: rem(20);
+  }
+
+  p.lead {
+    @include mq('mobile') {
+      width: 90%;
+    }
+  }
+
   .bio-container {
     flex: 0 0 auto;
     width: 20%;
     padding: rem(100);
+
+    @include mq('mobile') {
+      width: 100%;
+      padding: rem(20);
+    }
 
     ul {
       padding: 0;
@@ -25,9 +41,16 @@
       }
     }
   }
+
   .block-bio-container {
     padding-top: rem(100);
     flex: 1 1 auto;
+
+    @include mq('mobile') {
+      width: 100%;
+      flex: 0 0 auto;
+      padding-top: 0;
+    }
 
     .blocks {
       display: flex;
@@ -38,6 +61,11 @@
         flex: 0 0 auto;
         width: 31%;
         margin: rem(10);
+
+        @include mq('mobile') {
+          width: 100%;
+          margin: 0;
+        }
 
         &.image,
         &.video {
@@ -77,6 +105,10 @@
 
           .message-wrapper {
             padding: rem(40);
+
+            @include mq('mobile') {
+              padding: rem(20);
+            }
 
             h5,p { margin: 0; padding: 0; }
 

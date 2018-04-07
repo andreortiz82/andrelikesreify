@@ -1,6 +1,10 @@
 .example-container {
   display: flex;
 
+  @include mq('mobile') {
+    display: none;
+  }
+
   .code-link {
     font-size: rem(18);
     color: rgba($white, 0.5);
