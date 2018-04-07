@@ -139,8 +139,19 @@ export default class About extends Component {
                 <video ref="video" autostart="false" src="/bio-pics/song2.mp4" type="video/mp4"/>
               </div>
               </Fade>
-
             </div>
+
+            <Fade up>
+            <div className="quote-container">
+              <blockquote>
+                <span>You're cool</span>
+                <svg className="tip">
+                  <polygon points="0,0 40,0 20,20"/>
+                </svg>
+                <cite>Mom</cite>
+              </blockquote>
+            </div>
+            </Fade>
           </div>
         </div>
 

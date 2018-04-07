@@ -1,0 +1,30 @@
+.conclusion-container {
+  padding: rem(100);
+
+  .container {
+  }
+
+  .signature {
+    width: rem(150);
+
+    svg { width: 100%; }
+  }
+
+  .social-links {
+    display: flex;
+    margin-top: rem(20);
+
+    a {
+      flex: 0 0 auto;
+      margin-right: rem(20);
+      color: $ccc;
+      transition: all 0.5s;
+
+      &:hover {
+        transform: scale(1.2);
+        color: $black;
+      }
+
+    }
+  }
+}

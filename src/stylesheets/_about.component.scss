@@ -103,6 +103,38 @@
   }
 
   .quote-container {
+    margin-top: rem(100);
 
+    blockquote {
+      margin: 0 auto;
+      padding: 0;
+      position: relative;
+      font-style: italic;
+      font-family: serif;
+      width: rem(500);
+
+      svg.tip {
+        fill: rgba($black, 0.5);
+        position: absolute;
+        left: 50%;
+        margin-left: -20px;
+      }
+
+      span {
+        @include border-radius;
+        background: rgba($black, 0.5);
+        font-size: rem(80);
+        display: block;
+        text-align: center;
+        padding: rem(40);
+      }
+
+      cite {
+        display: block;
+        text-align: center;
+        margin-top: rem(40);
+        color: $yellow;
+      }
+    }
   }
 }
