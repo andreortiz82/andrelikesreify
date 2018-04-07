@@ -167,6 +167,12 @@ export default class Example extends Component {
           <div className="form-container">
             <div className="panel">
               <h2>Working code example.</h2>
+              <span className="code-link">
+                <a href="https://github.com/andreortiz82/andrelikesreify/blob/master/src/components/Example.js" target="_blank" rel="noopener noreferrer">
+                  <i className="icon fab fa-github"></i>
+                  Component Code
+                </a>
+              </span>
               <p className="lead">Here's a prototype of a new game I'm working on. It's totally original. I call it <strike>MadLibs&trade;</strike> ... <br/>ZannyWordprov&trade; (it's a working title)</p>
               { this._ui_render_form() }
             </div>

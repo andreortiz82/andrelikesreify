@@ -1,6 +1,23 @@
 .example-container {
   display: flex;
 
+  .code-link {
+    font-size: rem(18);
+    color: rgba($white, 0.5);
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color 0.5s;
+
+      .icon {
+        margin-right: rem(10);
+      }
+
+      &:hover { color: $white; }
+    }
+  }
+
   .form-container,
   .story-container {
     flex: 0 0 auto;
