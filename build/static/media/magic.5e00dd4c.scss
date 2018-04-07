@@ -1,0 +1,12 @@
+@import "colors";
+@import "mixins";
+@import "globals";
+@import "charts";
+
+// sections
+@import "topbanner.component";
+@import "introduction.component";
+@import "skills.component";
+@import "example.component";
+@import "about.component";
+@import "conclusion.component";
