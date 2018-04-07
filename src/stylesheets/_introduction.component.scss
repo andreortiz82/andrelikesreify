@@ -19,6 +19,7 @@
 
       @include mq('mobile') {
         width: 100%;
+        background: $white;
       }
     }
   }

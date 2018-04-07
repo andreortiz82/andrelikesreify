@@ -10,7 +10,6 @@
 
   p.lead {
     @include mq('mobile') {
-      width: 90%;
     }
   }
 
@@ -21,7 +20,7 @@
 
     @include mq('mobile') {
       width: 100%;
-      padding: rem(20);
+      padding: 0;
     }
 
     ul {
