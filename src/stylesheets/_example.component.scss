@@ -68,7 +68,7 @@
 
   .form-container {
     color: $white;
-    background: $red;
+    background: $black;
 
     .form {
 
@@ -181,13 +181,13 @@
             transition: all 0.4s;
             border: none;
             background: $trans;
-            color: rgba($black, 0.5);
+            color: rgba($white, 0.5);
             padding: rem(10) rem(20);
             font-size: rem(18);
             font-family: 'Roboto Slab', serif;
             font-weight: 700;
 
-            &:hover { color: $black; }
+            &:hover { color: $white; }
           }
         }
       }

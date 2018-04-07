@@ -58,14 +58,14 @@ export default class About extends Component {
               <li>Creative thinker</li>
               <li>Strong teammate</li>
               <li>Focused + Driven</li>
-              <li>Self Managed</li>
+              <li>Self-Managed</li>
             </ul>
 
             <ul>
               <label>Weaknesses</label>
               <li>Impatient</li>
               <li>Over analytical</li>
-              <li>Self Critical</li>
+              <li>Self-Critical</li>
             </ul>
           </div>
 
@@ -92,7 +92,7 @@ export default class About extends Component {
               <div className="block message white">
                 <div className="message-wrapper">
                   <h5>Work Goals</h5>
-                  <p>Build products that drive the industry with a great team.</p>
+                  <p>Build products with a great team and drive the industry forward.</p>
                 </div>
               </div>
               </Fade>
