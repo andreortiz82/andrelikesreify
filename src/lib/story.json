@@ -1,10 +1,11 @@
 {
   "story": [
     { "type" : "Adjective" },
-    { "type" : "Verb" },
-    { "type" : "SciFi inspired Noun" },
-    { "type" : "Funny Adjective" },
-    { "type" : "More funny Adjective" }
+    { "type" : "Place" },
+    { "type" : "Noun" },
+    { "type" : "Verb ending in ING" },
+    { "type" : "Adjective" },
+    { "type" : "One more Adjective" }
   ],
   "adjective": [
     "awesome",
@@ -32,9 +33,13 @@
     "wet",
     "zest"],
   "noun": [
-    "Show Girl",
-    "Gun Show",
-    "Space Rock"
+    "banana hammock",
+    "rubber chicken",
+    "sweat stain",
+    "chocolate candy",
+    "bowl of noodles",
+    "toilet paper",
+    "taco truck"
   ],
   "verb": [
     "air bending",
@@ -45,5 +50,15 @@
     "eating someones lunch",
     "waving the flag",
     "rocking the casba"
+  ],
+  "place": [
+    "Texas",
+    "The Abyss",
+    "Space",
+    "The 12th Planet",
+    "Funky Town",
+    "Buttsville",
+    "The YMCA",
+    "Nowhere special"
   ]
 }

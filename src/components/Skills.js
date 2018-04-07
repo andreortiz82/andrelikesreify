@@ -11,44 +11,44 @@ export default class Skills extends Component {
       <div className="skills-container">
         <Fade>
         <div className="container">
-          <h2>For the last 12 years... </h2>
-          <p className="lead">I've been learning new skills, developing my craft and building up tolerance for this moment. Crafting great products with good people and seeing real results - <span>that's what I'm into.</span></p>
+          <h2>Capabilities + Process</h2>
+          <p className="lead">For the last 15 years I have been crafting interactive content. Over that time, I've learned multiple programing languages and watched design trends fall in and out of favor. <br/>As the digital landscape evolves, one thing that remains the same is the Users need for a seemless experience.</p>
         </div>
         </Fade>
         <div className="skill-blocks">
           <Zoom delay={100}>
             <div className="skill-block">
-              <SkillMeter label="Illustration" amount="85 15" color="orange" caption="I can hang"/>
+              <SkillMeter label="Illustration" amount="85 15" color="black" caption="I can hang"/>
             </div>
           </Zoom>
 
           <Zoom delay={200}>
           <div className="skill-block">
-            <SkillMeter label="Application Design" amount="98 2" color="green" caption="Level Badass"/>
+            <SkillMeter label="Application Design" amount="98 2" color="black" caption="Level Badass"/>
           </div>
           </Zoom>
 
           <Zoom delay={300}>
           <div className="skill-block">
-            <SkillMeter label="Experience Design" amount="98 2" color="green" caption="Level Badass"/>
+            <SkillMeter label="Experience Design" amount="98 2" color="black" caption="Level Badass"/>
           </div>
           </Zoom>
 
           <Zoom delay={400}>
           <div className="skill-block">
-            <SkillMeter label="HTML + CSS" amount="95 5" color="green" caption="Level Badass"/>
+            <SkillMeter label="HTML + CSS" amount="95 5" color="black" caption="Level Badass"/>
           </div>
           </Zoom>
 
           <Zoom delay={500}>
           <div className="skill-block">
-            <SkillMeter label="React JS" amount="65 35" color="yellow" caption="I can be dangerous"/>
+            <SkillMeter label="React JS" amount="65 35" color="black" caption="I can be dangerous"/>
           </div>
           </Zoom>
 
           <Zoom delay={600}>
           <div className="skill-block">
-            <SkillMeter label="CLJS" amount="15 85" color="red" caption="Be patient with me"/>
+            <SkillMeter label="CLJS" amount="15 85" color="black" caption="Be patient with me"/>
           </div>
           </Zoom>
 
@@ -59,8 +59,8 @@ export default class Skills extends Component {
           <article className="message">
             <Slide left>
             <div className="caption">
-              <h3>The <i>"I got it!"</i> moment</h3>
-              <p className="lead">When creativity hits, I grab something to write with and start planning. After a good sketch session, I transition over to Balsamiq to refine it further.</p>
+              <h3>It starts with a pencil</h3>
+              <p className="lead">New features are born on paper. After a good sketch session, I transition over to <a href="https://balsamiq.com/">Balsamiq</a> to refine it further.</p>
             </div>
             </Slide>
           </article>
@@ -69,7 +69,7 @@ export default class Skills extends Component {
             <Slide right>
             <div className="caption">
               <h3>Looking good and feeling good</h3>
-              <p className="lead">Once a feature has been refined, it's time to apply style and animation. Using my design toolset, I craft a design worthy of praise and a free beer.</p>
+              <p className="lead">Asethetics and animation are key to the Users overall experience. Using my design toolset, I craft a design worthy of praise and a free beer.</p>
             </div>
             </Slide>
           </article>
@@ -78,7 +78,7 @@ export default class Skills extends Component {
             <Slide left>
             <div className="caption">
               <h3>Super Nerd Legos&trade;</h3>
-              <p className="lead">HTML, SCSS and ReactJS: These are just a few tools I use to bring our features to life. Plus, it gives me mad street-cred with the developers.</p>
+              <p className="lead">HTML, CSS and React: These are fantastic tools for build functional prototypes. Plus, it gives me mad street-cred with the developers.</p>
             </div>
             </Slide>
           </article>

@@ -5,13 +5,12 @@ export default class Conclusion extends Component {
     return (
       <div className="conclusion-container">
         <div className="container">
-          <h2>Ok Reify, here it is...</h2>
+          <h2>Dear ReifyHealth,</h2>
           <p className="lead">
-            I heard about the exciting work you do in the medical space; Moving medical industry software into the future by building a more creative healthcare system - I dig that. You want to beef up your team with additional talent. <span>Reify, I am that beef.</span>
+             I feel I would be a great addition to your team. My years of experience paired with our shared goal of pushing industry forward - we could build an exciting product. You want to beef up your team with additional talent. <span>Reify, I am that beef.</span>
           </p>
-          <p><b>Let's keep this conversaiton going.</b> Please don't hesitate to <a href="mailto:hello@andreortiz.com">email me</a> if you have any questions. <br/>I look forward to hearing from you.</p>
 
-          <p>Sincerely,</p>
+          <p>Thank you for your consideration,</p>
           <div className="signature">
             <svg x="0px" y="0px" viewBox="0 0 70 45">
               <path d="M0,34.4c0-0.8-0.3-1.6,1-2.1c1.3-0.5,2.5-1.3,4-1c2,0.3,4.1-0.6,6.1,0.6c0.2,0.1,1.2-0.4,1.5-0.9

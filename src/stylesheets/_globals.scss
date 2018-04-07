@@ -16,10 +16,6 @@ h2 { font-size: rem(40); }
 h3 { font-size: rem(30); }
 h4 { font-size: rem(20); }
 
-p:not(.lead) {
-  line-height: rem(40);
-}
-
 // Special
 ::-moz-selection { background: $light; }
 ::selection { background: $light; }
@@ -34,10 +30,20 @@ p:not(.lead) {
     margin: auto;
   }
 
+  p:not(.lead) {
+    line-height: rem(40);
+  }
+
   p.lead {
     font-size: rem(32);
     line-height: rem(45);
 
     span { font-weight: bold; }
+
+    a {
+      color: $blue;
+      text-decoration: none;
+      border-bottom: 1px dashed $blue;
+    }
   }
 }

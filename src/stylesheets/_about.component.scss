@@ -1,8 +1,33 @@
 .about-container {
-  padding: rem(100);
-  background: $navy;
-  color: $white;
+  background: $white;
+  color: $black;
+  display: flex;
+
+  .bio-container {
+    flex: 0 0 auto;
+    width: 20%;
+    padding: rem(100);
+
+    ul {
+      padding: 0;
+      margin: 0 0 rem(40) 0;
+
+      label {
+        margin: 0 0 rem(20) 0;
+        font-family: 'Roboto Slab', serif;
+        font-weight: 700;
+        color: $black;
+      }
+
+      li {
+        margin-left: rem(22);
+        line-height: rem(40);
+      }
+    }
+  }
   .block-bio-container {
+    padding-top: rem(100);
+    flex: 1 1 auto;
 
     .blocks {
       display: flex;
@@ -11,12 +36,11 @@
 
       .block {
         flex: 0 0 auto;
-        width: rem(400);
-        // margin: rem(5);
+        width: 31%;
+        margin: rem(10);
 
         &.image,
         &.video {
-          height: rem(400);
           overflow: hidden;
           img {
             width: 100%;
@@ -57,7 +81,7 @@
             h5,p { margin: 0; padding: 0; }
 
             h5 {
-              border-bottom: 5px solid $black;
+              border-bottom: 5px solid $white;
               padding: 0 0 rem(20) 0;
               margin: 0 0 rem(20) 0;
               display: inline-block;
@@ -66,38 +90,17 @@
 
         }
 
-        &.light {
-          background: $light;
-          color: $black;
-        }
-
-        &.yellow {
-          background: $yellow;
-          color: $black;
-        }
-
-        &.green {
-          background: $green;
-          color: $black;
-        }
-
-        &.orange {
-          background: $orange;
+        &.black {
+          background: $black;
           color: $white;
         }
 
-        &.navy {
-          background: $navy;
-          color: $white;
+        &.white {
+          background: $white;
+          color: $black;
+
+          .message-wrapper h5 { border-bottom: 5px solid $ccc; }
         }
-
-        &.red {
-          background: $red;
-          color: $white;
-
-          .message-wrapper h5 { border-bottom: 5px solid $white; }
-        }
-
       }
     }
   }

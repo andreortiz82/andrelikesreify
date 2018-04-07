@@ -34,8 +34,9 @@ export default class Example extends Component {
       isValid: null,
       responses: [
         storyJSON.adjective[Math.floor(Math.random()*storyJSON.adjective.length)],
-        storyJSON.verb[Math.floor(Math.random()*storyJSON.verb.length)],
+        storyJSON.place[Math.floor(Math.random()*storyJSON.place.length)],
         storyJSON.noun[Math.floor(Math.random()*storyJSON.noun.length)],
+        storyJSON.verb[Math.floor(Math.random()*storyJSON.verb.length)],
         storyJSON.adjective[Math.floor(Math.random()*storyJSON.adjective.length)],
         storyJSON.adjective[Math.floor(Math.random()*storyJSON.adjective.length)]
       ]
@@ -154,9 +155,7 @@ export default class Example extends Component {
   _ui_render_result(){
     return (
     <div className="story-result">
-      <p className={ this.state.isReadable ? "lead readable" : "lead"}>
-        Andre Ortiz is a <Fade delay={100}><span>{ this.state.responses[0]}</span></Fade> dude living in Austin, TX. He's always learning new skills like <Fade delay={200}><span>{ this.state.responses[1] }</span></Fade> and <Fade delay={300}><span>{ this.state.responses[2] }</span></Fade> (that new javascript framework). Mostly, he enjoys designing and building software with <Fade delay={400}><span>{ this.state.responses[3] }</span></Fade> people and becoming better at his craft. Andre is the type of <Fade delay={500}><span>{ this.state.responses[4] }</span></Fade> person you'd want on your team.
-      </p>
+      <p className={ this.state.isReadable ? "lead readable" : "lead"}>Andre, a <Fade delay={100}><span>{ this.state.responses[0]}</span></Fade> designer from <Fade delay={200}><span>{ this.state.responses[1] }</span></Fade>, lives with his wife, daughter and <Fade delay={300}><span>{ this.state.responses[2] }</span></Fade>. He has a few different hobbies like, illustration, music and <Fade delay={400}><span>{ this.state.responses[3] }</span></Fade>. Recently, Andre heard <b>ReifyHealth</b> was looking for <Fade delay={500}><span>{ this.state.responses[4] }</span></Fade> people like him. He sure hopes they like this <Fade delay={600}><span>{ this.state.responses[5]}</span></Fade> pitch.</p>
     </div>
     )
   }
@@ -167,14 +166,15 @@ export default class Example extends Component {
         <Slide left>
           <div className="form-container">
             <div className="panel">
-              <h2>Golly gee! Real code.</h2>
-              <p className="lead">Here's a quick example of my capabilities. It's totally original. I call it <strike>MadLibs&trade;</strike> ... <br/>ZannyWordprov&trade; (it's a working title)</p>
+              <h2>Working code example.</h2>
+              <p className="lead">Here's a prototype of a new game I'm working on. It's totally original. I call it <strike>MadLibs&trade;</strike> ... <br/>ZannyWordprov&trade; (it's a working title)</p>
               { this._ui_render_form() }
             </div>
           </div>
         </Slide>
         <div className="story-container">
           <div className="panel">
+            <label>ZannyWordprov&trade;</label>
             { this._ui_render_result() }
           </div>
         </div>

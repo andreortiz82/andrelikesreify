@@ -4,27 +4,7 @@
     .donut-segment { fill: $trans; stroke-linecap: line; }
     .donut-ring { fill: $trans; stroke-linecap: line; }
 
-    &.blue {
-      .donut-segment { stroke: $blue; }
-    }
-    &.yellow {
-      .donut-segment { stroke: $yellow; }
-    }
-    &.red {
-      .donut-segment { stroke: $red; }
-    }
-    &.navy {
-      .donut-segment { stroke: $navy; }
-    }
-    &.purple {
-      .donut-segment { stroke: $purple; }
-    }
-    &.green {
-      .donut-segment { stroke: $green; }
-    }
-    &.orange {
-      .donut-segment { stroke: $orange; }
-    }
+    &.black .donut-segment { stroke: $black; }
   }
 
   label {

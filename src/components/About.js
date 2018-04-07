@@ -38,20 +38,44 @@ export default class About extends Component {
     return (
       <div className="about-container">
 
-        <div className="container">
+          <div className="bio-container">
+            <h2>About me</h2>
+            <p className="lead">
+              I'm a family man with a passion to create. A self-starter, list maker and strong teammate.
+            </p>
 
-          <h2>Trying my best since '82</h2>
-          <p className="lead">
-            I'm a lot of things - but one thing's for sure: <span>What you see, is what you get.</span>
-          </p>
+            <ul>
+              <label>Hobbies</label>
+              <li>Walking + Hiking</li>
+              <li>Music + Video Production</li>
+              <li>Drawing + Graffiti</li>
+              <li>Dad life</li>
+            </ul>
+
+            <ul>
+              <label>Strengths</label>
+              <li>Working Experience</li>
+              <li>Creative thinker</li>
+              <li>Strong teammate</li>
+              <li>Focused + Driven</li>
+            </ul>
+
+            <ul>
+              <label>Weaknesses</label>
+              <li>Impatient</li>
+              <li>Over anylitical</li>
+              <li>Self critical</li>
+            </ul>
+          </div>
+
 
           <div className="block-bio-container">
             <div className="blocks">
 
               <Fade up>
-              <div className="block message yellow">
+              <div className="block message black">
                 <div className="message-wrapper">
-                  <h5>Personal Elevator Pitch</h5>
+                  <h5>The Elevator Pitch</h5>
                   <p>I'm a husband, father, creator and friend.</p>
                 </div>
               </div>
@@ -64,10 +88,10 @@ export default class About extends Component {
               </Fade>
 
               <Fade up>
-              <div className="block message green">
+              <div className="block message white">
                 <div className="message-wrapper">
                   <h5>Work Goals</h5>
-                  <p>I'm passionate about my work - I want it to be reliable, fun and sought after.</p>
+                  <p>Build products that drive industry with a team I love.</p>
                 </div>
               </div>
               </Fade>
@@ -79,10 +103,10 @@ export default class About extends Component {
               </Fade>
 
               <Fade up>
-              <div className="block message red">
+              <div className="block message white">
                 <div className="message-wrapper">
-                  <h5>Creative Strategies</h5>
-                  <p>I push my abilities to find inspiration on any medium. I'm aware enough to know when to keep going and when to pivot.</p>
+                  <h5>Personal Goals</h5>
+                  <p>Continue to stay disciplined in my pursuit of mastery.</p>
                 </div>
               </div>
               </Fade>
@@ -94,10 +118,10 @@ export default class About extends Component {
               </Fade>
 
               <Fade up>
-              <div className="block message green">
+              <div className="block message white">
                 <div className="message-wrapper">
                   <h5>Humble Pie</h5>
-                  <p>It's important to have a good sense of humor and never take yourself too seriously.</p>
+                  <p>Have a good sense of humor and never take myself too seriously.</p>
                 </div>
               </div>
               </Fade>
@@ -109,38 +133,23 @@ export default class About extends Component {
               </Fade>
 
               <Fade up>
-              <div className="block message yellow">
+              <div className="block message white">
                 <div className="message-wrapper">
-                  <h5>Have a little patience</h5>
-                  <p>I like to see results and sometimes rush an idea to see where it can go.</p>
+                  <h5>Don't flake</h5>
+                  <p>Be reliable. Keep my name in the minds of others.</p>
                 </div>
               </div>
               </Fade>
 
-              <Fade up>
-              <div className="block image">
-                <img src="/bio-pics/robot.jpg" alt="robot"/>
-              </div>
-              </Fade>
-
-              <Fade up>
-              <div className="block message red">
-                <div className="message-wrapper">
-                  <h5>Put me in Coach</h5>
-                  <p>I want to be in the trench, heads down with my team. Software is a team effort and I can't get there without you.</p>
-                </div>
-              </div>
-              </Fade>
-
-              <Fade up>
+              {/*<Fade up>
               <div className="block video" onClick={ this.playVideo.bind(this) }>
                 { this._ui_render_video_control(this.state.videoIsPlaying) }
                 <video loop ref="video" autostart="false" src="/bio-pics/song2.mp4" type="video/mp4"/>
               </div>
-              </Fade>
+              </Fade>*/}
             </div>
 
-            <Fade up>
+            {/*<Fade up>
             <div className="quote-container">
               <blockquote>
                 <span>You're cool</span>
@@ -150,9 +159,9 @@ export default class About extends Component {
                 <cite>Mom</cite>
               </blockquote>
             </div>
-            </Fade>
+            </Fade>*/}
           </div>
-        </div>
+
 
       </div>
     );
