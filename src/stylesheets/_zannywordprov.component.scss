@@ -1,4 +1,4 @@
-.example-container {
+.zannywordprov-container {
   display: flex;
 
   @include mq('mobile') {
@@ -30,10 +30,10 @@
   .story-container {
     flex: 0 0 auto;
     width: 50%;
-
+    background: $white;
     .panel {
       padding: rem(100) rem(50);
-      min-height: rem(400)
+      min-height: rem(500)
     }
   }
 
@@ -149,6 +149,7 @@
             outline: none;
             margin: 0;
             text-indent: rem(20);
+            border-radius: 0;
 
             &:focus,
             &:active { border-color: $red; }

@@ -10,7 +10,7 @@
 
   @include mq('tablet') {
     flex-wrap: wrap;
-    padding: rem(20);
+    padding: rem(40);
   }
 
   p.lead {
@@ -28,24 +28,39 @@
       padding: 0;
     }
     @include mq('tablet') {
-      width: 50%;
+      width: 100%;
       padding: 0;
     }
 
-    ul {
-      padding: 0;
-      margin: 0 0 rem(40) 0;
+    .lists {
+      display: flex;
+      flex-direction: column;
 
-      label {
-        margin: 0 0 rem(20) 0;
-        font-family: 'Roboto Slab', serif;
-        font-weight: 700;
-        color: $black;
+      @include mq('tablet') {
+        flex-wrap: wrap;
+        flex-direction: row;
       }
 
-      li {
-        margin-left: rem(22);
-        line-height: rem(40);
+      ul {
+        padding: 0;
+        margin: 0 0 rem(40) 0;
+        flex: 0 0 auto;
+
+        @include mq('tablet') {
+          width: 33%;
+        }
+
+        label {
+          margin: 0 0 rem(20) 0;
+          font-family: 'Roboto Slab', serif;
+          font-weight: 700;
+          color: $black;
+        }
+
+        li {
+          margin-left: rem(22);
+          line-height: rem(40);
+        }
       }
     }
   }

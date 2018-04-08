@@ -4,7 +4,6 @@ export default class Conclusion extends Component {
   render() {
     return (
       <div className="conclusion-container">
-        <div className="container">
           <h2>Dear ReifyHealth,</h2>
           <p className="lead">
              I would be a great addition to your team. With my years of experience and our shared goal of pushing the industry forward - we could build an exciting product. You want to beef up your team with additional talent? <span>Reify, I am that beef.</span>
@@ -48,8 +47,6 @@ export default class Conclusion extends Component {
               <i className="fab fa-youtube"></i>
             </a>
           </div>
-        </div>
-
       </div>
     );
   }

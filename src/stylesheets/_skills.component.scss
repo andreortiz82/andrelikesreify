@@ -68,6 +68,10 @@
           width: 100%;
           min-height: rem(180);
         }
+
+        @include mq('tablet') {
+          min-height: rem(280);
+        }
       }
 
       .caption {

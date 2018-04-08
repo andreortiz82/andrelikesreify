@@ -5,25 +5,25 @@ body {
   color: $black;
 }
 
-.responsive-debugger {
-  display: block;
-  width: 100%;
-  height: rem(5);
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: black;
-  z-index: 1200;
-  @include mq('mobile') {
-    background: $red;
-  }
-  @include mq('tablet') {
-    background: $yellow;
-  }
-  @include mq('desk') {
-    background: $green;
-  }
-}
+// .responsive-debugger {
+//   display: block;
+//   width: 100%;
+//   height: rem(5);
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   background: black;
+//   z-index: 1200;
+//   @include mq('mobile') {
+//     background: $red;
+//   }
+//   @include mq('tablet') {
+//     background: $yellow;
+//   }
+//   @include mq('desk') {
+//     background: $green;
+//   }
+// }
 
 h1,h2,h3,h4,h5 {
   font-family: 'Roboto Slab', serif;
@@ -50,7 +50,7 @@ h4 { font-size: rem(20); }
 
 .introduction-container,
 .skills-container,
-.example-container,
+.zannywordprov-container,
 .about-container,
 .conclusion-container {
   .container {

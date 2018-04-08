@@ -44,6 +44,7 @@ export default class About extends Component {
               I'm a family man with a passion for making things. A self-starter, list maker and strong teammate.
             </p>
 
+            <div className="lists">
             <ul>
               <label>Hobbies</label>
               <li>Walking + Hiking + Boxing</li>
@@ -67,6 +68,7 @@ export default class About extends Component {
               <li>Over analytical</li>
               <li>Self-Critical</li>
             </ul>
+            </div>
           </div>
 
 

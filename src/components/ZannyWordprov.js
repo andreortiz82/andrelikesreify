@@ -3,7 +3,7 @@ import storyJSON from '../lib/story.json'
 import Slide from 'react-reveal/Slide';
 import Fade from 'react-reveal/Fade';
 
-export default class Example extends Component {
+export default class ZannyWordprov extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -162,7 +162,7 @@ export default class Example extends Component {
 
   render() {
     return (
-      <div className="example-container">
+      <div className="zannywordprov-container">
         <Slide left>
           <div className="form-container">
             <div className="panel">
