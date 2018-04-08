@@ -12,7 +12,7 @@ export default class Skills extends Component {
         <Fade>
         <div className="container">
           <h2>Capabilities + Process</h2>
-          <p className="lead">For the last 15 years I have been hand crafting the internet. Over that time, I've learned multiple programing languages and witnessed design trends fall in and out of favor. <br/>As the digital landscape evolves, one thing remains the same: <span>Users crave experience.</span></p>
+          <p className="lead">For the last 15 years I have been designing web applications for enterprise and start ups. Over that time, I've learned multiple programing languages and witnessed design trends fall in and out of favor. <br/>As the digital landscape evolves, one thing remains the same: <span>The people crave experience.</span></p>
         </div>
         </Fade>
         <div className="skill-blocks">

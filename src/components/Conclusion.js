@@ -9,7 +9,7 @@ export default class Conclusion extends Component {
              I would be a great addition to your team. With my years of experience and our shared goal of pushing the industry forward - we could build an exciting product. You want to beef up your team with additional talent? <span>Reify, I am that beef.</span>
           </p>
 
-          <p>Thank you again for your consideration,</p>
+          <p>Thank you for your consideration,</p>
           <div className="signature">
             <svg x="0px" y="0px" viewBox="0 0 70 45">
               <path d="M0,34.4c0-0.8-0.3-1.6,1-2.1c1.3-0.5,2.5-1.3,4-1c2,0.3,4.1-0.6,6.1,0.6c0.2,0.1,1.2-0.4,1.5-0.9
