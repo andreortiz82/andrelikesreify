@@ -12,7 +12,7 @@ export default class App extends Component {
   render() {
     return (
       <div className="app-container">
-        <span className="responsive-debugger"></span>
+        {/*<span className="responsive-debugger"></span>*/}
         <TopBanner/>
         <Introduction/>
         <Skills/>
