@@ -51,44 +51,59 @@ export default class Skills extends Component {
             <SkillMeter label="CLJS" amount="15 85" color="black" caption="Be patient with me"/>
           </div>
           </Zoom>
-
         </div>
 
-        <div className="container message-blocks">
+        <div className="message-blocks">
 
           <article className="message">
             <Slide left>
-            <div className="caption">
-              <h3>It starts with a pencil</h3>
-              <p className="lead">New features are born on paper. After a good sketch session, I transition over to <a href="https://balsamiq.com/">Balsamiq</a> to refine it further.</p>
-            </div>
+              <div className="caption">
+                <h3>It starts with a pencil</h3>
+                <p className="lead">New features are born on paper. After a good sketch session, I transition over to <a href="https://balsamiq.com/">Balsamiq</a> to refine it further.</p>
+              </div>
+            </Slide>
+            <Slide right>
+              <div className="image">
+              </div>
             </Slide>
           </article>
 
           <article className="message">
             <Slide right>
-            <div className="caption">
-              <h3>Looking good and feeling good</h3>
-              <p className="lead">Aesthetics and animation are key to successful interactions. Using pre-existing design collateral or starting from scratch, I craft a design worthy of praise and a free beer.</p>
-            </div>
+              <div className="caption">
+                <h3>Looking good and feeling good</h3>
+                <p className="lead">Aesthetics and animation are key to successful interactions. Using pre-existing design collateral or starting from scratch, I craft a design worthy of praise and a free beer.</p>
+              </div>
+            </Slide>
+            <Slide left>
+              <div className="image">
+              </div>
             </Slide>
           </article>
 
           <article className="message">
             <Slide left>
-            <div className="caption">
-              <h3>Super Nerd Legos&trade;</h3>
-              <p className="lead">HTML, CSS and React: These are fantastic tools for building functional prototypes. Plus, it gives me mad street-cred with the developers.</p>
-            </div>
+              <div className="caption">
+                <h3>Super Nerd Legos&trade;</h3>
+                <p className="lead">HTML, CSS and React: These are fantastic tools for building functional prototypes. Plus, it gives me mad street-cred with the developers.</p>
+              </div>
+            </Slide>
+            <Slide right>
+              <div className="image">
+              </div>
             </Slide>
           </article>
 
           <article className="message">
             <Slide right>
-            <div className="caption">
-              <h3>Holy Deployment, Batman!</h3>
-              <p className="lead">Like a loyal sidekick: I help setup the components, test the UX and handle the unexpected. I'm here to support the engineers until the feature is live.</p>
-            </div>
+              <div className="caption">
+                <h3>Holy Deployment, Batman!</h3>
+                <p className="lead">Like a loyal sidekick: I help setup the components, test the UX and handle the unexpected. I'm here to support the engineers until the feature is live.</p>
+              </div>
+            </Slide>
+            <Slide left>
+              <div className="image">
+              </div>
             </Slide>
           </article>
 

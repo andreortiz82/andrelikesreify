@@ -8,6 +8,11 @@
     padding: rem(20);
   }
 
+  @include mq('tablet') {
+    flex-wrap: wrap;
+    padding: rem(20);
+  }
+
   p.lead {
     @include mq('mobile') {
     }
@@ -20,6 +25,10 @@
 
     @include mq('mobile') {
       width: 100%;
+      padding: 0;
+    }
+    @include mq('tablet') {
+      width: 50%;
       padding: 0;
     }
 

@@ -46,7 +46,7 @@ export default class About extends Component {
 
             <ul>
               <label>Hobbies</label>
-              <li>Walking + Hiking</li>
+              <li>Walking + Hiking + Boxing</li>
               <li>Music + Video production</li>
               <li>Drawing + Graffiti</li>
               <li>Dad life</li>

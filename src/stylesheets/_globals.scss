@@ -5,6 +5,26 @@ body {
   color: $black;
 }
 
+.responsive-debugger {
+  display: block;
+  width: 100%;
+  height: rem(5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: black;
+  z-index: 1200;
+  @include mq('mobile') {
+    background: $red;
+  }
+  @include mq('tablet') {
+    background: $yellow;
+  }
+  @include mq('desk') {
+    background: $green;
+  }
+}
+
 h1,h2,h3,h4,h5 {
   font-family: 'Roboto Slab', serif;
   font-weight: 700;
@@ -17,7 +37,11 @@ h3 { font-size: rem(30); }
 h4 { font-size: rem(20); }
 
 @include mq('mobile') {
-  h1 { font-size: rem(30); }
+  h1,h2 { font-size: rem(30); }
+}
+
+@include mq('tablet') {
+  h1,h2 { font-size: rem(30); }
 }
 
 // Special
@@ -36,12 +60,20 @@ h4 { font-size: rem(20); }
     @include mq('mobile') {
       width: 90%;
     }
+
+    @include mq('tablet') {
+      width: 90%;
+    }
   }
 
   p:not(.lead) {
     line-height: rem(40);
 
     @include mq('mobile') {
+      line-height: rem(30);
+    }
+
+    @include mq('tablet') {
       line-height: rem(30);
     }
   }
@@ -59,6 +91,11 @@ h4 { font-size: rem(20); }
     }
 
     @include mq('mobile') {
+      font-size: rem(24);
+      line-height: rem(35);
+    }
+
+    @include mq('tablet') {
       font-size: rem(24);
       line-height: rem(35);
     }

@@ -8,67 +8,6 @@
 
   .container {
     text-align: center;
-
-    &.message-blocks {
-      .message {
-        text-align: left;
-        display: flex;
-
-        @include mq('mobile') {
-          flex-wrap: wrap;
-        }
-
-        .caption {
-          width: 40%;
-          flex: 0 0 auto;
-          padding: rem(150) 0;
-
-          @include mq('mobile') {
-            width: 100%;
-            padding: 0;
-            margin-top: rem(150);
-          }
-        }
-
-        &:nth-child(even) .caption {
-          margin-left: 60%;
-
-          @include mq('mobile') {
-            margin-left: 0;
-            text-align: right;
-          }
-        }
-      }
-
-      .message:nth-child(1) {
-        background: url(/illustration-pics/pencil.jpg) no-repeat center right;
-      }
-      .message:nth-child(2) {
-        background: url(/illustration-pics/lookinggood.jpg) no-repeat center left;
-      }
-      .message:nth-child(3) {
-        background: url(/illustration-pics/legos.jpg) no-repeat center right;
-      }
-      .message:nth-child(4) {
-        background: url(/illustration-pics/hero.jpg) no-repeat center left;
-      }
-
-      .message:nth-child(even),
-      .message:nth-child(odd) {
-        background-size: 60%;
-      }
-
-      .message:nth-child(even) {
-        @include mq('mobile') {
-          background-position: top right;
-        }
-      }
-      .message:nth-child(odd) {
-        @include mq('mobile') {
-          background-position: top left;
-        }
-      }
-    }
   }
 
   .skill-blocks {
@@ -80,6 +19,10 @@
       flex-wrap: wrap;
       margin-bottom: rem(40);
     }
+    @include mq('tablet') {
+      flex-wrap: wrap;
+      margin-bottom: rem(40);
+    }
 
     .skill-block {
       flex: 0 0 auto;
@@ -88,6 +31,99 @@
 
       @include mq('mobile') {
         width: 50%;
+      }
+
+      @include mq('tablet') {
+        width: 30%;
+      }
+    }
+  }
+
+  .message-blocks {
+
+    .message {
+      text-align: left;
+      display: flex;
+      align-items: stretch;
+      padding: rem(100);
+      min-height: rem(400);
+
+      @include mq('mobile') {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        padding: rem(20);
+      }
+
+      @include mq('tablet') {
+        padding: rem(40);
+        min-height: rem(240);
+      }
+
+      .caption,
+      .image {
+        width: 50%;
+        flex: 0 0 auto;
+
+        @include mq('mobile') {
+          width: 100%;
+          min-height: rem(180);
+        }
+      }
+
+      .caption {
+      }
+
+      .image {
+        @include mq('mobile') {
+          min-height: rem(250);
+        }
+      }
+
+      &:nth-child(even) .caption {
+        margin-left: 50%;
+
+        @include mq('mobile') {
+          margin-left: 0;
+          text-align: right;
+        }
+      }
+
+      &:nth-child(even) .image {
+        margin-left: -100%;
+
+        @include mq('mobile') {
+          margin-left: 0;
+          text-align: right;
+        }
+      }
+    }
+
+    .message:nth-child(1) .image {
+      background: url(/illustration-pics/pencil.jpg) no-repeat top center;
+    }
+    .message:nth-child(2) .image {
+      background: url(/illustration-pics/lookinggood.jpg) no-repeat top center;
+    }
+    .message:nth-child(3) .image {
+      background: url(/illustration-pics/legos.jpg) no-repeat top center;
+    }
+    .message:nth-child(4) .image {
+      background: url(/illustration-pics/hero.jpg) no-repeat top center;
+    }
+
+    .message:nth-child(even) .image,
+    .message:nth-child(odd) .image {
+      background-size: 60%;
+    }
+
+    .message:nth-child(even) .image {
+      @include mq('mobile') {
+        background-position: top right;
+      }
+    }
+    .message:nth-child(odd) .image {
+      @include mq('mobile') {
+        background-position: top left;
       }
     }
   }

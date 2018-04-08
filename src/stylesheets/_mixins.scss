@@ -26,9 +26,12 @@ $round: 1000px;
 
 @mixin mq($point) {
   @if $point == 'desk' {
-    @media (min-width: 1200px) { @content; }
+    @media all and (min-width: 1024px) and (max-width: 1440px) { @content; }
+  }
+  @else if $point == 'tablet' {
+    @media all and (min-width: 768px) and (max-width: 1024px) { @content; }
   }
   @else if $point == 'mobile' {
-    @media (max-width: 960px) { @content; }
+    @media all and (max-width: 768px) { @content; }
   }
 }
