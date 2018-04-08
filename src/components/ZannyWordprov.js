@@ -168,7 +168,7 @@ export default class ZannyWordprov extends Component {
             <div className="panel">
               <h2>Working code example.</h2>
               <span className="code-link">
-                <a href="https://github.com/andreortiz82/andrelikesreify/blob/master/src/components/Example.js" target="_blank" rel="noopener noreferrer">
+                <a href="https://github.com/andreortiz82/andrelikesreify/blob/master/src/components/ZannyWordprov.js" target="_blank" rel="noopener noreferrer">
                   <i className="icon fab fa-github"></i>
                   Component Code
                 </a>
